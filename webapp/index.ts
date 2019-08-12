@@ -3,12 +3,8 @@ sap.ui.define(
         "sap/m/Button",
 	    "sap/m/MessageToast"
     ],
-    /** 
-     * @param {typeof sap.m.Button} Button
-     * @param {typeof sap.m.MessageToast} MessageToast
-     * */
-    function(Button, MessageToast) {
-        const btn = new Button({
+    function(Button: typeof sap.m.Button, MessageToast: typeof sap.m.MessageToast) {
+        const btn = new Button(null, {
             text: "Ready...",
             press: function () {
                 MessageToast.show("Hello World!");
