@@ -14,6 +14,5 @@
         "@openui5/sap.ui.core": "1.68.1",
         "@openui5/themelib_sap_belize": "1.68.1"
     },
-    "devDependencies": {
-    }
+    "devDependencies": {}
 }
