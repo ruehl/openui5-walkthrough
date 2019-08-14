@@ -4,8 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "compile": "tsc"
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
     "author": "",
@@ -16,6 +15,5 @@
         "@openui5/themelib_sap_belize": "1.68.1"
     },
     "devDependencies": {
-        "@openui5/ts-types": "1.60.2"
     }
 }
