@@ -1,11 +1,16 @@
-<mvc:View xmlns="sap.m" 
-    xmlns:mvc="sap.ui.core.mvc" controllerName="sap.ui.demo.walkthrough.controller.InvoiceList">
-    <List id="invoiceList" headerText="{i18n>invoiceListTitle}" class="sapUiResponsiveMargin" width="auto" items="{invoice>/Invoices}">
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" controllerName="sap.ui.demo.walkthrough.controller.InvoiceList">
+    <List id="invoiceList" headerText="{i18n>invoiceListTitle}" class="sapUiResponsiveMargin" width="auto" items="{
+         path : 'invoice>/Invoices',
+         sorter : {
+				path : 'ShipperName',
+				group : true
+		 }      
+        }">
         <headerToolbar>
             <Toolbar>
-                <Title text="{i18n>invoiceListTitle}"/>
-                <ToolbarSpacer/>
-                <SearchField width="50%" search=".onFilterInvoices"/>
+                <Title text="{i18n>invoiceListTitle}" />
+                <ToolbarSpacer />
+                <SearchField width="50%" search=".onFilterInvoices" />
             </Toolbar>
         </headerToolbar>
         <items>
@@ -20,7 +25,7 @@
                     <ObjectStatus text="{
 						path: 'invoice>Status',
 						formatter: '.formatter.statusText'
-					}"/>
+					}" />
                 </firstStatus>
             </ObjectListItem>
         </items>
